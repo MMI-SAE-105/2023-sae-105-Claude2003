@@ -1,0 +1,23 @@
+:root {
+/* Color styles */
+--fond: rgba(252, 251, 251, 1);
+--détails: rgba(242, 153, 18, 1);
+--header: rgba(242, 242, 242, 1);
+--icones: rgba(57, 56, 54, 1);
+--texte-color: rgba(0, 0, 0, 1);
+--small-texte: rgba(118, 118, 118, 1);
+
+
+/* Text-size styles */
+/* base size: titre-1 (38px) */
+--titre-1: 1rem;
+--titre-2: 0.66rem;
+--titre-3: 0.53rem;
+--body-1: 0.47rem;
+--body-2: 0.42rem;
+--small-texte: 0.37rem;
+--small-texte-2: 0.37rem;
+--small-texte-3: 0.32rem;
+--explication: 0.42rem;
+--onglets: 0.42rem;
+}
