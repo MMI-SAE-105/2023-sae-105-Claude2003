@@ -16,39 +16,38 @@
           <img src="../public/icones/monde.svg" alt="Logo Bbrands Agency">
         </a>
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menubtn">
+        <button  class="header__menubtn menubtn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
             <img src="../public/icones/menu.svg" alt="icone de menu">
-          </button>
+            <span class="menubtn__bar"></span>
+        </button>
 
-          <nav  id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+          <nav  id="mainNav" class="header__menu menu" x-show="menuIsOpen" x-transition.duration.800ms >
                  
                     
-            <ul>
-                <li>
-                    <a href="architect.html">
-                        <img src="../public/icones/Architect.svg" alt="">
-                        <span class="menu-span-paddingl"> Moshe Safdie </span>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a  class="menu__link "href="architect.html">
+                        <img src="../public/icones/Architect.svg" alt=""> Moshe Safdie
                     </a>
                 </li>
 
 
-                <li>
-            <a href="frise.html">
-                <img src="../public/icones/batiment.svg" alt="">
-                <span class="menu-span-paddingl"> Les œuvres de l’exposition </span>
+                <li class= "menu__item">
+            <a class="menu__link "href="frise.html">
+                <img src="../public/icones/batiment.svg" alt=""> Les œuvres de l’exposition 
             </a>
         </li>
 
 
-        <li>
-            <a href="info.html">
-                <img src="../public/icones/exposition.svg" alt=""> 
-                <span class="menu-span-paddingl"> Informations sur l’exposition </span>
+        <li class= "menu__item">
+            <a class="menu__link "href="info.html">
+                <img src="../public/icones/exposition.svg" alt=""> Informations sur l’exposition
+                 
             </a>
         </li>
 
 
-        <li>
+        <li class= "menu__item">
             <a href="404.HTML">
             <img src="../public/icones/tiket.svg" alt="">
             <span class="menu-span-paddingl"> Billetterie </span>
@@ -56,9 +55,10 @@
     </li>
 
 
-        <li><a href="contact.html">
+        <li class= "menu__item">
+            <a class="menu__link " href="contact.html">
             <img src="../public/icones/contact.svg" alt="">
-            <span class="menu-span-paddingl"> Contact </span>
+            Contact
         </a>
     </li>
 
