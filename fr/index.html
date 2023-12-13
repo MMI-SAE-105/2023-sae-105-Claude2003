@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="FR"x-data="{menuIsOpen: false}": class="{noscroll:menuIsOpen}">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <title>ARCTITEC</title>
     <link rel="icon" href="../public/icones/logo" />
 </head>
@@ -13,11 +16,11 @@
           <img src="../public/icones/monde.svg" alt="Logo Bbrands Agency">
         </a>
 
-        <button >
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menubtn">
             <img src="../public/icones/menu.svg" alt="icone de menu">
           </button>
 
-          <nav class="menu">
+          <nav  id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
                  
                     
             <ul>
