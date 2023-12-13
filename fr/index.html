@@ -13,11 +13,10 @@
 
     <header class="header">
         <a class= "header__logo-site" href="/">
-          <img src="../public/icones/monde.svg" alt="Logo Bbrands Agency">
+          <img src="../public/icones/monde.svg" alt="Logo">
         </a>
 
-        <button  class="header__menubtn menubtn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
-            <img src="../public/icones/menu.svg" alt="icone de menu">
+        <button  class="header__menubtn menubtn" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
             <span class="menubtn__bar"></span>
         </button>
 
@@ -48,7 +47,7 @@
 
 
         <li class= "menu__item">
-            <a href="404.HTML">
+            <a class="menu__link " href="404.HTML">
             <img src="../public/icones/tiket.svg" alt="">
             <span class="menu-span-paddingl"> Billetterie </span>
         </a>
