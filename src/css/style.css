@@ -18,7 +18,7 @@
 @import "layout/footer.css";
 @import "layout/contact.css";
 @import "layout/frise.css";
-
+@import "layout/404.css";
 
 /* Components */
 @import "components/menu.css";

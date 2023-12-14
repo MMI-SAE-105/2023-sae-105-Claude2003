@@ -1,0 +1,42 @@
+body {
+    
+    
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.bar_search {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Montserrat';
+    
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.submit_erreur {
+    background-color: var(--icones);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 20px;
+    color: var(--icones);
+}
+
+

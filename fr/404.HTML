@@ -80,21 +80,25 @@
 
           
     </header>
-
+<main>
 <h1>Page Non trouvée</h1>
+
+<img src="../public/img/404.webp" alt="">
 <form action="https://duckduckgo.com/" method="GET" 
     x-data="{ q:'', }" 
     x-on:submit="q = q + ' site:mmimontbeliard.com'">
+    
     <div class="bar_search">
+
         <label for="q">Texte à chercher :</label>
+        
         <input type="text"  x-model="q">
     </div>
     <button type="submit" class="submit_erreur" >Rechercher</button>
 </form>
 
 
-<a href="/fr/index.html">
-    <button class="rechercher">Retourner au site</button>          
-</a>
+
+</main>
 </body>
 </html>
