@@ -137,8 +137,63 @@ et l’aéroport international Ben Gurion à Tel-Aviv en 2004. Il conçoit de no
 Sur la scène mondiale plus étendue on trouve des projets qu’ils a conçus comme le Khalsa Heritage Centre à Anandpur Sahib, en Inde (2011), et l’éblouissant design du Marina Bay Sands Integrated Resort à Singapour (2011). 
 Ce complexe polyvalent, qui a été qualifié de Stonehenge colossal, contient un hôtel de 55 étages, un centre de congrès, et des installations d’exposition. Son profil ressemble à un gigantesque canot ou à un traîneau incurvé perché au sommet de trois tours incurvées et non traditionnelles.
 </p>
+<h2> Œuvres de Moshe Safdie </h2>
 </div>
 
+<section>
+<div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
+    <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button>
+    <button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+
+    <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+    [...$refs.parent.children]
+        .find(e=>e.getBoundingClientRect().x>=0)
+        .id">
+            <div id="ecran-1" class="carrousel_ecran">
+                <a href ="">
+                    <img class="center__img" src="../public/img/Raffles_City_Chongqing.webp" alt="">
+                </a>
+            </div>
+            <div id="ecran-2" class="carrousel_ecran">
+                <a  href="">
+                     <img class="center__img" src="../public/img/The_Class_of_1959_Chapel.webp" alt="">
+                </a>
+            </div>
+            <div id="ecran-3" class="carrousel_ecran">
+                <a href="">
+                    <img class="center__img" src="../public/img/National_Gallery_of_Canada.webp" alt="">
+                </a>
+            </div>
+            <div id="ecran-4" class="carrousel_ecran">
+                <a href="">
+                    <img class="center__img" src="../public/img/Habitat-67.webp" alt="">
+                </a>
+            </div>
+            <div id="ecran-5" class="carrousel_ecran">
+                <a href="">
+                    <img class="center__img" src="../public/img/altair-residences.webp" alt="">
+                </a>
+            </div>
+            <div id="ecran-6" class="carrousel_ecran">
+                <a href="">
+                    <img class="center__img" src="../public/img/Children's.webp" alt="">
+                </a>
+            </div>
+            <div id="ecran-7" class="carrousel_ecran">
+                <a href="">
+                    <img class="center__img" src="../public/img/David_Citadel_Hotel.webp" alt="">
+                </a>
+            </div>
+            <div id="ecran-8" class="carrousel_ecran">
+                <a href="">
+                    <img class="center__img" src="../public/img/ArtScience_Museum.webp" alt="">
+                </a>
+            </div>
+
+            
+    </div>
+</div>
+</section>
 </main>
 
  
