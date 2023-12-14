@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="FR"x-data="{menuIsOpen: false}": class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="alternate" hreflang="en" href="http://architect.claudesamba.fr
+    " />
+<link rel="alternate" hreflang="es" href="http://architect.claudesamba.fr
+" />
+<link rel="alternate" hreflang="de" href="http://architect.claudesamba.fr
+" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    
+    <title>ARCTITEC</title>
+   
+    <link rel="icon" href="../public/icones/logo.svg" />
+</head>
+<body>
+
+    <header class="header">
+        <a class= "header__logo" href="../en/index.html" onclick="document.cookie = 
+        `nf_lang=en; path=/ ; SameSite=Strict`
+        ">
+          <img src="../public/icones/monde.svg" alt="Logo">
+        </a>
+
+        <button  class="header__menubtn menubtn" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+            <span class="menubtn__bar"></span>
+        </button>
+
+          <nav  id="mainNav" class="header__menu menu" x-show="menuIsOpen" x-transition.duration.800ms >
+                 
+                    
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a  class="menu__link "href="architect.html">
+                        <img src="../public/icones/Architect.svg" alt=""> Moshe Safdie
+                    </a>
+                </li>
+
+
+                <li class= "menu__item">
+            <a class="menu__link "href="frise.html">
+                <img src="../public/icones/batiment.svg" alt=""> Les œuvres de l’exposition 
+            </a>
+        </li>
+
+
+        <li class= "menu__item">
+            <a class="menu__link "href="info.html">
+                <img src="../public/icones/exposition.svg" alt=""> Informations sur l’exposition
+                 
+            </a>
+        </li>
+
+
+        <li class= "menu__item">
+            <a class="menu__link " href="404.HTML">
+            <img src="../public/icones/tiket.svg" alt="">
+            <span class="menu-span-paddingl"> Billetterie </span>
+        </a>
+    </li>
+
+
+        <li class= "menu__item">
+            <a class="menu__link " href="contact.html">
+            <img src="../public/icones/contact.svg" alt="">
+            Contact
+        </a>
+    </li>
+
+          
+    </header>
+    <main>
+    <div  id="onglets" x-data="{ouvert : 3,}">
+        
+        <ul role="tablist" class="tablist">
+           
+            <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}">
+                <a class="a__onglet" href="architect.html">Architecte</a>
+            </li>
+           
+            <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                <a class="a__onglet" href="frise.html">Œuvres</a>
+            </li>
+               
+                <li role="tab" @click="ouvert = 3" :class="{'actif':ouvert==3}">
+                    <a class="a__ongletactif" href="404.HTML">Billetterie</a>
+                </li>
+               
+
+          </ul>
+        
+    </div>
+</main>
+
+ 
+
+
+<footer>
+    <div class="menu--separation">
+        <span class="menu__barresep"></span>
+    </div>
+    
+     <img class="footericon" src="../public/icones/logo.svg" alt="/">
+
+    <p class="footer__p"> Projet réalisé dans le cadre d'un exercice pédagogique au 
+   
+
+    <a class="footer__link" href="http://mmimontbeliard.com/contact">
+        département MMI de Montbéliard
+    </a> 
+</p>
+<div class="menu__container">
+    <a href="#">
+        <img class="menu__icon" src="../public/icones/instagram.svg" alt="instagram icon">
+    </a>
+    
+    <a href="#">
+        <img class="menu__icon" src="../public/icones/facebook.svg" alt="facebook icon">
+    </a>
+
+    <a href="#">
+        <img class="menu__icon" src="../public/icones/twitter.svg" alt="twitter icon">
+    </a>
+</div>
+</footer>
+
+</body>
+</html>
