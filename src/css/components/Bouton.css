@@ -1,26 +1,8 @@
-.btn {
-    border: none;
-    padding: 10px 10px;
-    border-radius: 24px;
-    font-size: 12px;
-    font-size: 0.8rem;  
-    letter-spacing: 2px;  
-    cursor: pointer;
-  }
+.send__button{
+  font-weight: var(--body-1-fw);
   
-  
-  .fill {
-    background: rgba(0, 212, 255, 0.9);
-    color: rgba(255,255,255,0.95);
-    filter: drop-shadow(0);
-    font-weight: bold;
-    transition: all .3s ease; 
-  }
-  
-  .fill:hover{
-    transform: scale(1.125);  
-    border-color: rgba(255, 255, 255, 0.9);
-    filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
-    transition: all .3s ease;    
-  }
-  
+  background-color: var(--header);
+  border: 1px solid var(--header);
+  padding: 20px 50px 20px 50px;
+  filter: drop-shadow(var(--shadow));
+}

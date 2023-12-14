@@ -7,6 +7,7 @@
 .block{
     padding-left: 10px;
     padding-right: 10px;
+    font-weight: var(--body-1-fw);
 
 }
 
@@ -45,6 +46,7 @@
 }
 
 .form__textarea {
+    
     width: 100%;
     color: var(--header);
     border: 1px solid var(--header);
@@ -63,4 +65,9 @@
     margin-left: 15px;
 }
 
+.bouton{
+
+    margin-top: 20px; 
+    text-align: center;
+}
 
