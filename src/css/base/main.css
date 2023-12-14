@@ -28,5 +28,14 @@ h1 {
 h2 {
     font-family: var(--titre-2);
   text-decoration-color: var(--texte-color);
+  filter: drop-shadow(var(--shadow));
 }
 
+.h1_archi{
+  text-align: center;
+  
+}
+
+.p_archi{
+  margin: 25px;
+}
