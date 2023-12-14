@@ -72,51 +72,48 @@
           
     </header>
 
-
-
- <main>
-
-    <h1 class="h_contact"> Contact</h1>
-<p class= " p__contact" >If you have any questions, suggestions or comments, please don't hesitate to contact us!
-  </p>  
-  
-  <div class="block">
+<main>
+    <div>
         <div class="form__grid">
-        
-            <div class="form__spacing form__col form__col--1">
-            <label class="form__label" for="name">Name </label>
+        <div class="form__spacing form__col form__col--1">
+            <label class="form__label" for="name">Nom (obligatoire)</label>
             <form>
-                <input class="form__text" type="text" name="last-name" id="last-name" >
+                <input class="form__text" type="text" name="last-name" id="last-name" placeholder="Votre nom">
             </form>
         </div>
 
         <div class="form__spacing form__col form__col--2">
-            <label class="form__label" for="forname">Prénom </label>
+            <label class="form__label" for="forname">Prénom (obligatoire)</label>
             <form>
-                <input class="form__text" type="text" name="first-name" id="first-name" > 
+                <input class="form__text" type="text" name="first-name" id="first-name" placeholder="Votre prénom"> 
             </form>
         </div>
         </div>
         <div class="form__spacing">
-            <label class="form__label" for="email">Email </label>
+            <label class="form__label" for="email">Email (Obligatoire)</label>
         
             <form>
-                <input class="form__text" type="email" name="email" id="email" >
+                <input class="form__text" type="email" name="email" id="email" placeholder="Votre adresse mail">
             </form>
         </div>
     
-        
+        <div class="form__spacing">
+            <label class="form__label" for="sujet">Sujet (obligatoire)</label>
+            <form>
+                <input class="bulle" type="text" id="sujet" name="sujet">
+            </form>
+        </div>
         
         <div class="form__spacing">
-            <label class="form__label " for="message">Message </label>
-            <textarea class="form__textarea" name="message" id="message" cols="30" rows="10"></textarea>
+            <label class="form__label" for="message">Message (obligatoire)</label>
+            <textarea class="form__textarea" name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
 
         </div>
-        <div class="bouton">
+        
         <input class="send__button" type="submit" value="Envoyer">
-        </div> 
-</div>
+    </div>
 </main>
+
 
 
 <footer>
@@ -145,6 +142,141 @@
     <a href="#">
         <img class="menu__icon" src="../public/icones/twitter.svg" alt="twitter icon">
     </a>
+</div>
+</footer>
+
+</body>
+</html>
+
+
+
+<header class="header">
+    <a class= "header__logo" href="../fr/index.html" onclick="document.cookie = 
+    `nf_lang=en; path=/ ; SameSite=Strict`
+    ">
+      <img src="../public/icones/monde.svg" alt="Logo">
+    </a>
+
+    <button  class="header__menubtn menubtn" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+        <span class="menubtn__bar"></span>
+    </button>
+
+      <nav  id="mainNav" class="header__menu menu" x-show="menuIsOpen" x-transition.duration.800ms >
+             
+                
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a  class="menu__link "href="architect.html">
+                    <img src="../public/icones/Architect.svg" alt=""> Moshe Safdie
+                </a>
+            </li>
+
+
+            <li class= "menu__item">
+        <a class="menu__link "href="frise.html">
+            <img src="../public/icones/batiment.svg" alt=""> Works in the exhibition
+        </a>
+    </li>
+
+
+    <li class= "menu__item">
+        <a class="menu__link "href="info.html">
+            <img src="../public/icones/exposition.svg" alt=""> Exhibition information
+             
+        </a>
+    </li>
+
+
+    <li class= "menu__item">
+        <a class="menu__link " href="404.HTML">
+        <img src="../public/icones/tiket.svg" alt="">
+        <span class="menu-span-paddingl"> Tickets </span>
+    </a>
+</li>
+
+
+    <li class= "menu__item">
+        <a class="menu__link " href="contact.html">
+        <img src="../public/icones/contact.svg" alt="">
+        Contact
+    </a>
+</li>
+
+      
+</header>
+
+
+
+<main>
+
+<h1 class="h_contact"> Contact</h1>
+<p class= " p__contact" >If you have any questions, suggestions or comments, please don't hesitate to contact us!
+</p>  
+
+<div class="block">
+    <div class="form__grid">
+    
+        <div class="form__spacing form__col form__col--1">
+        <label class="form__label" for="name">last name </label>
+        <form>
+            <input class="form__text" type="text" name="last-name" id="last-name" >
+        </form>
+    </div>
+
+    <div class="form__spacing form__col form__col--2">
+        <label class="form__label" for="forname">first name</label>
+        <form>
+            <input class="form__text" type="text" name="first-name" id="first-name" > 
+        </form>
+    </div>
+    </div>
+    <div class="form__spacing">
+        <label class="form__label" for="email">Email </label>
+    
+        <form>
+            <input class="form__text" type="email" name="email" id="email" >
+        </form>
+    </div>
+
+    
+    
+    <div class="form__spacing">
+        <label class="form__label " for="message"> Message </label>
+        <textarea class="form__textarea" name="message" id="message" cols="30" rows="10"></textarea>
+
+    </div>
+    <div class="bouton">
+    <input class="send__button" type="submit" value="Send">
+    </div> 
+</div>
+</main>
+
+
+<footer>
+<div class="menu--separation">
+    <span class="menu__barresep"></span>
+</div>
+
+ <img class="footericon" src="../public/icones/logo.svg" alt="/">
+
+<p class="footer__p"> Project carried out as part of an educational exercise at the
+
+<a class="footer__link" href="http://mmimontbeliard.com/contact">
+    MMI department in Montbéliard
+</a> 
+</p>
+<div class="menu__container">
+<a href="#">
+    <img class="menu__icon" src="../public/icones/instagram.svg" alt="instagram icon">
+</a>
+
+<a href="#">
+    <img class="menu__icon" src="../public/icones/facebook.svg" alt="facebook icon">
+</a>
+
+<a href="#">
+    <img class="menu__icon" src="../public/icones/twitter.svg" alt="twitter icon">
+</a>
 </div>
 </footer>
 
