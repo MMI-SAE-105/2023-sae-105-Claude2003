@@ -47,7 +47,36 @@ h3{
 .img_car{
   margin-top: 80px;
 }
+.img_home{
+  margin-top: 80px;
+  filter : brightness(60%)
+}
 
+.p_home{
+  position: absolute;
+  top: 25%;
+  left: 24%;
+  z-index: 1;
+  color: var(--fond);
+  font-family: var(--titre-2);
+  font-weight: 900;
+
+}
+
+.p__home{
+  text-align: center;
+  margin: 15px;
+}
+
+.h__home{
+text-align: center;
+margin-top: 60px; 
+
+}
+
+.bouton_home{
+  text-align: center;
+}
 strong{
   color: var(--détails);
 }
