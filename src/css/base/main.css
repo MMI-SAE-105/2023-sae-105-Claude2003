@@ -1,0 +1,32 @@
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-2);
+    line-height: 1.6;
+    background-color: var(--fond);
+  }
+
+  
+main {
+    margin-top: 150px; /
+}
+
+
+
+h1 {
+  font-family: var(--titre-1);
+  text-decoration-color: var(--texte-color);
+  filter: drop-shadow(var(--shadow));
+
+}
+
+h2 {
+    font-family: var(--titre-2);
+  text-decoration-color: var(--texte-color);
+}
+
