@@ -6,3 +6,20 @@
   padding: 20px 50px 20px 50px;
   filter: drop-shadow(var(--shadow));
 }
+
+.discover__button{
+  font-weight: var(--body-1-fw);
+  background-color: var(--icones);
+  border: 1px solid var(--icones);
+  padding: 20px 50px 20px 50px;
+  color: var(--header) ;
+  
+}
+
+.btn-fill{
+  font-weight: var(--body-1-fw);
+  background-color: var(--fond);
+  border: 1px solid var(--icones);
+  padding: 20px 30px 20px 30px;
+  
+}
