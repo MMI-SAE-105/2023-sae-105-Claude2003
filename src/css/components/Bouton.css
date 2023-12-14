@@ -25,3 +25,8 @@
   padding: 20px 30px 20px 30px;
   
 }
+
+.btn__fill{
+  text-decoration: none;
+  color: var(--texte-color) ;
+}
