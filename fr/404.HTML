@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="FR"x-data="{menuIsOpen: false}": class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="alternate" hreflang="en" href="http://architect.claudesamba.fr
+    " />
+<link rel="alternate" hreflang="es" href="http://architect.claudesamba.fr
+" />
+<link rel="alternate" hreflang="de" href="http://architect.claudesamba.fr
+" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    
+    <title>ARCTITEC</title>
+   
+    <link rel="icon" href="../public/icones/logo.svg" />
+</head>
+<body>
+
+    <header class="header">
+        <a class= "header__logo" href="../en/index.html" onclick="document.cookie = 
+        `nf_lang=en; path=/ ; SameSite=Strict`
+        ">
+          <img src="../public/icones/monde.svg" alt="Logo">
+        </a>
+
+        <button  class="header__menubtn menubtn" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+            <span class="menubtn__bar"></span>
+        </button>
+
+          <nav  id="mainNav" class="header__menu menu" x-show="menuIsOpen" x-transition.duration.800ms >
+                 
+                    
+            <ul class="menu__list">
+
+              <li class="menu__item">
+                <a  class="menu__link "href="/">
+                    <img src="../public/icones/home.svg" alt=""> Accueil
+                </a>
+            </li>
+
+                <li class="menu__item">
+                    <a  class="menu__link "href="architect.html">
+                        <img src="../public/icones/Architect.svg" alt=""> Moshe Safdie
+                    </a>
+                </li>
+
+
+                <li class= "menu__item">
+            <a class="menu__link "href="frise.html">
+                <img src="../public/icones/batiment.svg" alt=""> Les œuvres de l’exposition 
+            </a>
+        </li>
+
+
+        <li class= "menu__item">
+            <a class="menu__link "href="info.html">
+                <img src="../public/icones/exposition.svg" alt=""> Informations sur l’exposition
+                 
+            </a>
+        </li>
+
+
+        <li class= "menu__item">
+            <a class="menu__link " href="404.HTML">
+            <img src="../public/icones/tiket.svg" alt="">
+            <span class="menu-span-paddingl"> Billetterie </span>
+        </a>
+    </li>
+
+
+        <li class= "menu__item">
+            <a class="menu__link " href="contact.html">
+            <img src="../public/icones/contact.svg" alt="">
+            Contact
+        </a>
+    </li>
+
+          
+    </header>
+
+<h1>Page Non trouvée</h1>
+<form action="https://duckduckgo.com/" method="GET" 
+    x-data="{ q:'', }" 
+    x-on:submit="q = q + ' site:mmimontbeliard.com'">
+    <div class="bar_search">
+        <label for="q">Texte à chercher :</label>
+        <input type="text"  x-model="q">
+    </div>
+    <button type="submit" class="submit_erreur" >Rechercher</button>
+</form>
+
+
+<a href="/fr/index.html">
+    <button class="rechercher">Retourner au site</button>          
+</a>
+</body>
+</html>
