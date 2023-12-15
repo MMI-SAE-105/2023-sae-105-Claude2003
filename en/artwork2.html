@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en"x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="alternate" hreflang="fr" href="http://architect.claudesamba.fr
+    " />
+<link rel="alternate" hreflang="es" href="http://architect.claudesamba.fr
+" />
+<link rel="alternate" hreflang="de" href="http://architect.claudesamba.fr
+" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>ARCTITEC</title>
+    <link rel="icon" href="../public/icones/logo.svg" />
+</head>
+<body>
+
+    <header class="header">
+        <a class= "header__logo" href="../fr/index.html" onclick="document.cookie = 
+        `nf_lang=fr; path=/ ; SameSite=Strict`
+        ">
+          <img src="../public/icones/monde.svg" alt="Logo">
+        </a>
+
+        <button  class="header__menubtn menubtn" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+            <span class="menubtn__bar"></span>
+        </button>
+
+          <nav  id="mainNav" class="header__menu menu" x-show="menuIsOpen" x-transition.duration.800ms >
+                 
+                    
+            <ul class="menu__list">
+                <li class="menu__item">
+
+                    <li class="menu__item">
+                        <a  class="menu__link "href="../en/index.html">
+                            <img src="../public/icones/home.svg" alt=""> Home
+                        </a>
+                    </li>
+
+                    <a  class="menu__link "href="Artiste.html">
+                        <img src="../public/icones/Architect.svg" alt=""> Moshe Safdie
+                    </a>
+                </li>
+
+
+                <li class= "menu__item">
+            <a class="menu__link "href="timeline.html">
+                <img src="../public/icones/batiment.svg" alt="">The works in the exhibition
+            </a>
+        </li>
+
+
+        <li class= "menu__item">
+            <a class="menu__link "href="information.html">
+                <img src="../public/icones/exposition.svg" alt=""> Information on the exhibition
+                 
+            </a>
+        </li>
+
+
+        <li class= "menu__item">
+            <a class="menu__link " href="4042.HTML">
+            <img src="../public/icones/tiket.svg" alt="">
+            <span class="menu-span-paddingl"> Tickets </span>
+        </a>
+    </li>
+
+
+        <li class= "menu__item">
+            <a class="menu__link " href="contact1.html">
+            <img src="../public/icones/contact.svg" alt="">
+            Contact
+        </a>
+    </li>
+
+          
+    </header>
+<main>
+
+    <div  id="onglets" x-data="{ouvert : 3,}">
+            
+        <ul role="tablist" class="tablist">
+
+            <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==1}">
+                <a class="a__onglet" href="Artiste.html">Architect</a>
+            </li>
+           
+           
+            <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                <a class="a__onglet" href="timeline.html">Works</a>
+            </li>
+               
+              <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}">
+                <a class="a__ongletactif" href="4042.html">Tickets</a>
+            </li>  
+            
+          </ul>
+        
+    </div>
+
+    <h1 class="h1_archi"> CHILDREN'S</h1>
+
+    <img src="../public/img/Children's.webp" alt="" width="100%">
+
+    <div class="p_archi">
+    
+
+       <p>
+
+        The skyline of Colombo, Sri Lanka's vibrant capital, has been transformed by the imposing and elegant addition of Altair, a masterpiece by renowned architect Moshe Safdie. Inaugurated in 2021, Altair has quickly captured the imagination of locals and visitors alike, becoming a contemporary icon that combines sophistication, innovation and cutting-edge design.
+        A Unique Vertical Vision </p>
+</div>
+   <img src="../public/img/altair.2.webp" alt="" width="100%">
+
+   <div class="p_archi">
+
+<h2> A Unique Vertical Vision</h2>
+
+<p>
+
+    Altair is much more than just a skyscraper. It's a bold statement that pushes the boundaries of modern architecture. The structure consists of two interconnected towers, gracefully leaning towards each other, creating a distinctive silhouette that stands out in the urban skyline. This unique arrangement evokes a dynamic symmetry, symbolising harmony and unity.
+    </p>
+</div>
+
+<img src="../public/img/altair.3.webp" alt="" width="100%">
+
+<div class="p_archi">
+
+<h2> A reference to local culture</h2>
+<p>
+    
+
+    Moshe Safdie has incorporated elements of Sri Lankan culture into the design of Altair. Patterns inspired by local crafts adorn the façade, creating a visual connection between the modernity of the architecture and the rich traditions of Sri Lanka. It is a celebration of cultural identity in a contemporary context.
+    Sustainability at the heart of the design</p>
+</div>
+
+<img src="../public/img/altair-residences.webp" alt="" width="100%">
+
+<div class="p_archi">
+
+<h2> Sustainability at the Heart of Design</h2>
+<p>
+    
+
+    Altair is not only a feat of architecture, but also an example of sustainability. Cutting-edge technologies have been integrated to optimise energy efficiency, reduce the carbon footprint and promote environmentally-friendly living. It is a testament to Moshe Safdie's commitment to responsible design.
+    Impact on the city and its residents
+</p>
+</div>
+
+<img src="../public/img/altair.4.webp" alt="" width="100%">
+
+<div class="p_archi">
+
+<p>
+    
+    En conclusion, Altair de Moshe Safdie à Colombo, Sri Lanka, incarne l'essence même de l'innovation architecturale. C'est une œuvre qui transcende les frontières, captivant le regard tout en intégrant harmonieusement la culture locale et la durabilité. Altair reste non seulement une merveille architecturale, mais aussi un témoignage durable de l'influence positive que l'architecture peut avoir sur la vie urbaine contemporaine.</p>
+</div>
+
+</main>
+
+<footer>
+    <div class="menu--separation">
+        <span class="menu__barresep"></span>
+    </div>
+    
+     <img class="footericon" src="../public/icones/logo.svg" alt="/">
+
+    <p class="footer__p"> Project carried out as part of an educational exercise at the
+    <a class="footer__link" href="http://mmimontbeliard.com/contact">
+        Montbéliard MMI department
+    </a> 
+</p>
+<div class="menu__container">
+    <a href="#">
+        <img class="menu__icon" src="../public/icones/instagram.svg" alt="instagram icon">
+    </a>
+    
+    <a href="#">
+        <img class="menu__icon" src="../public/icones/facebook.svg" alt="facebook icon">
+    </a>
+
+    <a href="#">
+        <img class="menu__icon" src="../public/icones/twitter.svg" alt="twitter icon">
+    </a>
+</div>
+</footer>
+
+</body>
+</html>
