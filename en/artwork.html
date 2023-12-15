@@ -78,161 +78,88 @@
 
           
     </header>
+<main>
 
-    <div class="hero__header ">
-        <p class="p_home"> ARCTITEC exhibition from 13 April to 23 June 2024</p>
-            <div class="hero__img duotone"> <img class="img_home" src="../public/img/home 1.webp" alt="" width="100%">
-         </div>
-        </div>   
-         <main>
-        
-        
-        
-        <p class="p__home" >Welcome to the website dedicated to the ARCHITECT exhibition, an immersive celebration of the visionary work of renowned architect, 
-            Moshe Safdie. This captivating exhibition will take you on a journey 
-            through the iconic architectural achievements that define the essence of Safdie's creativity and innovation.</p>
-        
-        <div class="bouton_home">
-        
-          <a href="architect.html" class="discover__button">Discover the artist</a>
-        </div>
-        
-        <h1 class="h__home"> Work at the exhibition </h1>
-        
-        <section class="carte">
-                
-            <div class="container">
-                <div class="card">
-                  <img class="card-image" src="../public/img/Altair.webp" alt="">
-                  <h2> Altair </h2>
-                  <p>Step back in time with Altair, a project that combines colonial heritage and modernity</p>. </div>
-                 <div class="button-card"> 
-        
-                   <button class="btn-fill"> <a class="btn__fill" href="artwork.html">Find out more </a>
-                  </button>
-                 </div>
-                   </div>
-               </div>
-             </section>
-        
-             <section class="carte">
-                
-                <div class="container">
-                    <div class="card">
-                      <img class="card-image" src="../public/img/David_Citadel_Hotel.webp" alt="">
-                      <h2> David Citadel Hotel </h2>
-                      <p>Discover the refined marriage of modern architecture and ancient history</p>.</div>
-                     <div class="button-card"> 
+    <div  id="onglets" x-data="{ouvert : 3,}">
             
-                       <button class="btn-fill"> <a a class="btn__fill" href="artwork1.html"> Find out more</a>
-                      </button>
-                     </div>
-                       </div>
-                   </div>
-                 </section>
+        <ul role="tablist" class="tablist">
+
+            <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==1}">
+                <a class="a__onglet" href="Artiste.html">Architect</a>
+            </li>
+           
+           
+            <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                <a class="a__onglet" href="timeline.html">Works</a>
+            </li>
+               
+              <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}">
+                <a class="a__ongletactif" href="4042.html">Tickets</a>
+            </li>  
+            
+          </ul>
         
-                 <section class="carte">
-                
-                    <div class="container">
-                        <div class="card">
-                          <img class="card-image" src="../public/img/ArtScience_Museum.webp" alt="">
-                          <h2> ArtScience Museum</h2>
-                          <p> ArtScience Museum, a futuristic structure that embodies the creative fusion of two worlds</p></div>
-                         <div class="button-card"> 
-                            <button class="btn-fill"> <a a class="btn__fill" href="artwork1.html"> Find out more</a>
-                            </button>
-                        </div>
-                           </div>
-                       </div>
-                     </section>
-        
-                     <section class="carte">
-                
-                        <div class="container">
-                            <div class="card">
-                              <img class="card-image" src="../public/img/Children's.webp" alt="">
-                              <h2> Children's </h2>
-                              <p>Dive into the emotion and deep meaning of this memorial dedicated to children</p></div>
-                             <div class="button-card"> 
-                    
-                                <button class="btn-fill"> <a a class="btn__fill" href="artwork1.html"> Find out more</a>
-                                </button>
-                             </div>
-                               </div>
-                           </div>
-                         </section>
-        
-                         <section class="carte">
-                
-                            <div class="container">
-                                <div class="card">
-                                  <img class="card-image" src="../public/img/Habitat-67.webp" alt="">
-                                  <h2> Habitat 67 </h2>
-                                  <p>Habitat 67 is a bold exploration of urban living.</p></div>
-                                 <div class="button-card"> 
-                        
-                                    <button class="btn-fill"> <a a class="btn__fill" href="artwork1.html"> Find out more</a>
-                                    </button>
-                                 </div>
-                                   </div>
-                               </div>
-                             </section>
-        
-                             <section class="carte">
-                
-                                <div class="container">
-                                    <div class="card">
-                                      <img class="card-image" src="../public/img/National_Gallery_of_Canada.webp" alt="">
-                                      <h2> National Gallery of Canada </h2>
-                                      <p>This project is a harmonious blend of art and architecture</p>.  </div>
-                                     <div class="button-card"> 
-                                        <button class="btn-fill"> <a a class="btn__fill" href="artwork1.html"> Find out more</a>
-                                        </button>
-                                     </div>
-                                       </div>
-                                   </div>
-                                 </section>
-        
-                                 <section class="carte">
-                
-                                    <div class="container">
-                                        <div class="card">
-                                          <img class="card-image" src="../public/img/Raffles_City_Chongqing.webp" alt="">
-                                          <h2> Raffles City Chongqing
-                                          </h2>
-                                          <p>Elles représente le mariage harmonieux de l'esthétique moderne et traditionnelle.</p></div>
-                                         <div class="button-card"> 
-                                
-                                            <button class="btn-fill"> <a a class="btn__fill" href="artwork1.html"> Find out more</a>
-                                            </button>
-                                         </div>
-                                           </div>
-                                       </div>
-                                     </section>
-        
-                                     <section class="carte">
-                
-                                        <div class="container">
-                                            <div class="card">
-                                              <img class="card-image" src="../public/img/The_Class_of_1959_Chapel.webp" alt="">
-                                              <h2>The Class of 1959 Chapel</h2>
-                                              <p>Explore embodied spirituality in Harvard University's Chapel</p></div>
-                                             <div class="button-card"> 
-                                    
-                                                <button class="btn-fill"> <a a class="btn__fill" href="artwork1.html"> Find out more</a>
-                                                </button>
-                                             </div>
-                                               </div>
-                                           </div>
-                                         </section>
-        
-                                        </main>
-        
-        
-        
-        
-        
-        
+    </div>
+
+    <h1 class="h1_archi"> Altair  </h1>
+
+    <img src="../public/img/Altair.webp" alt="" width="100%">
+
+    <div class="p_archi">
+    
+
+       <p>
+
+        The skyline of Colombo, Sri Lanka's vibrant capital, has been transformed by the imposing and elegant addition of Altair, a masterpiece by renowned architect Moshe Safdie. Inaugurated in 2021, Altair has quickly captured the imagination of locals and visitors alike, becoming a contemporary icon that combines sophistication, innovation and cutting-edge design.
+        A Unique Vertical Vision </p>
+</div>
+   <img src="../public/img/altair.2.webp" alt="" width="100%">
+
+   <div class="p_archi">
+
+<h2> A Unique Vertical Vision</h2>
+
+<p>
+
+    Altair is much more than just a skyscraper. It's a bold statement that pushes the boundaries of modern architecture. The structure consists of two interconnected towers, gracefully leaning towards each other, creating a distinctive silhouette that stands out in the urban skyline. This unique arrangement evokes a dynamic symmetry, symbolising harmony and unity.
+    </p>
+</div>
+
+<img src="../public/img/altair.3.webp" alt="" width="100%">
+
+<div class="p_archi">
+
+<h2> A reference to local culture</h2>
+<p>
+    
+
+    Moshe Safdie has incorporated elements of Sri Lankan culture into the design of Altair. Patterns inspired by local crafts adorn the façade, creating a visual connection between the modernity of the architecture and the rich traditions of Sri Lanka. It is a celebration of cultural identity in a contemporary context.
+    Sustainability at the heart of the design</p>
+</div>
+
+<img src="../public/img/altair-residences.webp" alt="" width="100%">
+
+<div class="p_archi">
+
+<h2> Sustainability at the Heart of Design</h2>
+<p>
+    
+
+    Altair is not only a feat of architecture, but also an example of sustainability. Cutting-edge technologies have been integrated to optimise energy efficiency, reduce the carbon footprint and promote environmentally-friendly living. It is a testament to Moshe Safdie's commitment to responsible design.
+    Impact on the city and its residents
+</p>
+</div>
+
+<img src="../public/img/altair.4.webp" alt="" width="100%">
+
+<div class="p_archi">
+
+<p>
+    
+    En conclusion, Altair de Moshe Safdie à Colombo, Sri Lanka, incarne l'essence même de l'innovation architecturale. C'est une œuvre qui transcende les frontières, captivant le regard tout en intégrant harmonieusement la culture locale et la durabilité. Altair reste non seulement une merveille architecturale, mais aussi un témoignage durable de l'influence positive que l'architecture peut avoir sur la vie urbaine contemporaine.</p>
+</div>
+
+</main>
 
 <footer>
     <div class="menu--separation">
