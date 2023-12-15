@@ -1,6 +1,5 @@
 
 .menu{
-   
     background-color: var(--header);
     position: fixed;
     top: 0;
@@ -34,8 +33,6 @@
     text-align: start;
     padding: 15px; 
 }
-
-
 
 
 .menubtn {
