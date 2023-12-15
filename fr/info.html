@@ -128,16 +128,24 @@
          
          <p>Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants<strong> Gratuit</strong> </p>
       
-         <h3> Quelques Œuvres  </h3> 
-         
-         <img src="../public/img/Daniel_Libeskind.webp" alt="" @click="imageAffichee='../public/img/Daniel_Libeskind.webp'">
-         <img src="../public/img/Eero_Saarinen.webp" alt="" @click="imageAffichee='../public/img/Eero_Saarinen.webp'">
+         <h3> Autres architectes présents</h3>
 
-         <div class="overlay" x-show="imageAffichee" @click="imageAffichee = null" @keyup.escape.window="imageAffichee = null">
-            <figure><img :src="imageAffichee" alt=""></figure>
-        </div>
+         <section class="galerie">
+<div class="image-container">
+    <img class="img_info" src="../public/img/Daniel_Libeskind.webp" alt="" @click="imageAffichee='../public/img/Daniel_Libeskind.webp'">
+    <img class="img_info" src="../public/img/Eero_Saarinen.webp" alt="" @click="imageAffichee='../public/img/Eero_Saarinen.webp'">
 
-    </div>
+</div>
+
+<div class="image-container">
+<img class="img_info" src="../public/img/Daniel_Libeskind.webp" alt="" @click="imageAffichee='../public/img/Daniel_Libeskind.webp'">
+<img class="img_info" src="../public/img/Eero_Saarinen.webp" alt="" @click="imageAffichee='../public/img/Eero_Saarinen.webp'">
+</div>
+</section>
+
+<div class="overlay" x-show="imageAffichee" @click="imageAffichee = null" @keyup.escape.window="imageAffichee = null">
+    <figure><img :src="imageAffichee" alt=""></figure>
+</div>
 
     
    
