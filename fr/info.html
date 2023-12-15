@@ -17,7 +17,9 @@
    
     <link rel="icon" href="../public/icones/logo.svg" />
 </head>
-<body>
+<body  x-data="{
+    imageAffichee: null
+}">
 
     <header class="header">
         <a class= "header__logo" href="../en/index.html" onclick="document.cookie = 
@@ -128,7 +130,13 @@
       
          <h3> Quelques Œuvres  </h3> 
          
-         
+         <img src="../public/img/Daniel_Libeskind.webp" alt="" @click="imageAffichee='../public/img/Daniel_Libeskind.webp'">
+         <img src="../public/img/Eero_Saarinen.webp" alt="" @click="imageAffichee='../public/img/Eero_Saarinen.webp'">
+
+         <div class="overlay" x-show="imageAffichee" @click="imageAffichee = null" @keyup.escape.window="imageAffichee = null">
+            <figure><img :src="imageAffichee" alt=""></figure>
+        </div>
+
     </div>
 
     
