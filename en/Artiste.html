@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="FR"x-data="{menuIsOpen: false}": class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="alternate" hreflang="fr" href="http://architect.claudesamba.fr
+    " />
+<link rel="alternate" hreflang="es" href="http://architect.claudesamba.fr
+" />
+<link rel="alternate" hreflang="de" href="http://architect.claudesamba.fr
+" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>ARCTITEC</title>
+    <link rel="icon" href="../public/icones/logo.svg" />
+</head>
+<body>
+
+    <header class="header">
+        <a class= "header__logo" href="../fr/index.html" onclick="document.cookie = 
+        `nf_lang=fr; path=/ ; SameSite=Strict`
+        ">
+          <img src="../public/icones/monde.svg" alt="Logo">
+        </a>
+
+        <button  class="header__menubtn menubtn" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen &&'menubtn--open'">
+            <span class="menubtn__bar"></span>
+        </button>
+
+          <nav  id="mainNav" class="header__menu menu" x-show="menuIsOpen" x-transition.duration.800ms >
+                 
+                    
+            <ul class="menu__list">
+                <li class="menu__item">
+
+                    <li class="menu__item">
+                        <a  class="menu__link "href="indexe.html">
+                            <img src="../public/icones/home.svg" alt=""> Home
+                        </a>
+                    </li>
+
+                    <a  class="menu__link "href="Artiste.html">
+                        <img src="../public/icones/Architect.svg" alt=""> Moshe Safdie
+                    </a>
+                </li>
+
+
+                <li class= "menu__item">
+            <a class="menu__link "href="timeline.html">
+                <img src="../public/icones/batiment.svg" alt="">The works in the exhibition
+            </a>
+        </li>
+
+
+        <li class= "menu__item">
+            <a class="menu__link "href="information.html">
+                <img src="../public/icones/exposition.svg" alt=""> Information on the exhibition
+                 
+            </a>
+        </li>
+
+
+        <li class= "menu__item">
+            <a class="menu__link " href="4042.HTML">
+            <img src="../public/icones/tiket.svg" alt="">
+            <span class="menu-span-paddingl"> Tickets </span>
+        </a>
+    </li>
+
+
+        <li class= "menu__item">
+            <a class="menu__link " href="contact1.html">
+            <img src="../public/icones/contact.svg" alt="">
+            Contact
+        </a>
+    </li>
+
+          
+    </header>
+
+    <main>
+        <div  id="onglets" x-data="{ouvert : 3,}">
+            
+            <ul role="tablist" class="tablist">
+    
+                <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==3}">
+                    <a class="a__onglet" href="architect.html">Architect</a>
+                </li>
+               
+               
+                <li role="tab" @click="ouvert = 2" :class="{'actif':ouvert==2}">
+                    <a class="a__onglet" href="frise.html">Works</a>
+                </li>
+                   
+                  <li role="tab" @click="ouvert = 1" :class="{'actif':ouvert==1}">
+                    <a class="a__ongletactif" href="404.html">Tickets</a>
+                </li>  
+                
+              </ul>
+            
+        </div>
+    
+        <h1 class="h1_archi"> Moshe Safdie </h1>
+    
+        <img src="../public/img/Moshe_Safdie1 1.webp" alt="" width="100%">
+    
+        <div class="p_archi">
+            <h2> Biography </h2>
+    
+            <p> Moshe Safdie, C.C., architect, professor, urban planner, educator, theorist, author (born July 14, 1938, Haifa, Palestine [now Israel]).</p>
+     
+     <p>Safdie is a Companion of the Order of Canada and his architectural achievements include residential housing, galleries, fine arts complexes, parks, airports, museums, colleges, libraries, government buildings, memorials, master plans, and mixed-use complexes. 
+     
+     </p>
+     <p>In Canada, he is best known for the Habitat 67 residential complex in Montreal, the National Gallery of Canada in Ottawa, and Library Square in Vancouver. 
+     
+     </p> 
+     
+     <p>Moshe Safdie's influence is vast, spanning nearly 100 projects on five continents. His Boston-based firm has expanded branches to Jerusalem, Toronto, Singapore and Shanghai.
+        </p>
+    </div>
+       <img src="../public/img/moche1.webp" alt="" width="100%">
+    
+       <div class="p_archi">
+    
+        <h2> Education and early careers</h2>
+    
+        <p>
+        Moshe Safdie moved to Montreal with his family in 1953. He studied at McGill University, graduating in 1961. After an internship with American architect Louis Kahn in Philadelphia, 
+        he returned to Montreal in 1964 to supervise the completion of his student thesis: Habitat 67, a model residential complex built for Expo 67 in Montreal, which won him the Construction 
+        Man of the Yeardu Engineering News Record, and the Massey Medal for Architecture.
+        </p>
+    </div>
+    
+    <img src="../public/img/moshe-safdie3.webp" alt="" width="100%">
+    
+    <div class="p_archi">
+    
+    <h2> International projects</h2>
+    <p>
+        Moshe Safdie and Associates has become a major international firm with projects in many countries, including Israel, where Moshe Safdie designed the Yad Vashem Holocaust History Museum in Jerusalem in 2005, 
+    and Ben Gurion International Airport in Tel Aviv in 2004. He has also designed numerous buildings in the United States, including the headquarters of the United States Institute of Peace in Washington, D.C. (2011), the Crystal Bridges Museum of American Art in Bentonville, Arizona (2011),
+     and the Kauffman Center for the Performing Arts in Kansas City, Missouri (2011).
+    </p>
+    
+    <p>
+        On the wider world stage are projects he has designed such as the Khalsa Heritage Centre in Anandpur Sahib, India (2011), and the dazzling design of the Marina Bay Sands Integrated Resort in Singapore (2011). 
+    This multi-purpose complex, which has been described as a colossal Stonehenge, contains a 55-storey hotel, convention centre and exhibition facilities. Its profile resembles a gigantic canoe or curved sleigh perched atop three curved, non-traditional towers.
+   </p>
+    
+    <h1 class="h1_archi"> Works by Moshe Safdie </h1>
+    </div>
+    
+    <section>
+    <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
+        <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button>
+        <button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+    
+        <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+        [...$refs.parent.children]
+            .find(e=>e.getBoundingClientRect().x>=0)
+            .id">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <a href ="">
+                        <img class="center__img" src="../public/img/Raffles_City_Chongqing.webp" alt="">
+                    </a>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <a  href="">
+                         <img class="center__img" src="../public/img/The_Class_of_1959_Chapel.webp" alt="">
+                    </a>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <a href="">
+                        <img class="center__img" src="../public/img/National_Gallery_of_Canada.webp" alt="">
+                    </a>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <a href="">
+                        <img class="center__img" src="../public/img/Habitat-67.webp" alt="">
+                    </a>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <a href="">
+                        <img class="center__img" src="../public/img/altair-residences.webp" alt="">
+                    </a>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <a href="">
+                        <img class="center__img" src="../public/img/Children's.webp" alt="">
+                    </a>
+                </div>
+                <div id="ecran-7" class="carrousel_ecran">
+                    <a href="">
+                        <img class="center__img" src="../public/img/David_Citadel_Hotel.webp" alt="">
+                    </a>
+                </div>
+                <div id="ecran-8" class="carrousel_ecran">
+                    <a href="">
+                        <img class="center__img" src="../public/img/ArtScience_Museum.webp" alt="">
+                    </a>
+                </div>
+    
+                
+        </div>
+    </div>
+    </section>
+    </main>
+
+
+<footer>
+    <div class="menu--separation">
+        <span class="menu__barresep"></span>
+    </div>
+    
+     <img class="footericon" src="../public/icones/logo.svg" alt="/">
+
+    <p class="footer__p"> Projet réalisé dans le cadre d'un exercice pédagogique au 
+   
+
+    <a class="footer__link" href="http://mmimontbeliard.com/contact">
+        département MMI de Montbéliard
+    </a> 
+</p>
+<div class="menu__container">
+    <a href="#">
+        <img class="menu__icon" src="../public/icones/instagram.svg" alt="instagram icon">
+    </a>
+    
+    <a href="#">
+        <img class="menu__icon" src="../public/icones/facebook.svg" alt="facebook icon">
+    </a>
+
+    <a href="#">
+        <img class="menu__icon" src="../public/icones/twitter.svg" alt="twitter icon">
+    </a>
+</div>
+</footer>
+
+</body>
+</html>
